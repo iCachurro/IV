@@ -296,6 +296,10 @@ habrá que comprobar si está activada o no en nuestro caso
 particular. Para hacerlo se usa este comando en Linux:
 
     egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+
+Para hacerlo en macOS se usa este comando:
+
+	sysctl -a | grep machdep.cpu.features
 	
 `/proc/cpuinfo` es el fichero del sistema de ficheros virtual `/proc`
 que da acceso mediante "ficheros" a las estructuras de datos del
